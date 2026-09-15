@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Последний зуб мудрости — lastwistooth.com</title>
+    <meta
+      name="description"
+      content="Последний зуб мудрости — музыкальный проект. lastwistooth.com"
+    />
+    <link rel="canonical" href="https://lastwistooth.com/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="top">
+      <a class="mark" href="#top">lastwistooth.com</a>
+      <nav class="nav" aria-label="Основное">
+        <a href="#listen">Музыка</a>
+        <a href="#about">О проекте</a>
+        <a href="#contact">Связь</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">музыкальный проект</p>
+        <h1>Последний зуб мудрости</h1>
+        <p class="lede">
+          То, что выросло последним и всё равно ноет. Песни про взросление,
+          которое так и не закончилось.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#listen">Слушать</a>
+          <a class="btn ghost" href="#contact">Написать</a>
+        </div>
+      </section>
+
+      <section id="listen" class="panel">
+        <h2>Музыка</h2>
+        <p class="muted">Релизы появятся здесь. Пока — тишина перед прикусом.</p>
+        <ul class="releases">
+          <li>
+            <span class="year">2026</span>
+            <span class="name">Скоро</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about" class="panel">
+        <h2>О проекте</h2>
+        <p>
+          Последний зуб мудрости — соло-проект. Голос, гитара и то, что не
+          вырвать без последствий.
+        </p>
+      </section>
+
+      <section id="contact" class="panel">
+        <h2>Связь</h2>
+        <p>
+          <a href="mailto:hello@lastwistooth.com">hello@lastwistooth.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Последний зуб мудрости</p>
+      <p class="domain">lastwistooth.com</p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
